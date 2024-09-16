@@ -1,14 +1,18 @@
 {
-  "name": "@ignite-ui/main",
+  "name": "@learn-design-system/main",
   "private": true,
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
     "dev": "turbo run dev --parallel",
-    "build": "turbo run build"
+    "build": "turbo run build",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "turbo run build --filter=@learn-design-system/docs && changeset publish"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.27.8",
     "turbo": "^2.1.1"
   },
   "packageManager": "npm@10.8.2"

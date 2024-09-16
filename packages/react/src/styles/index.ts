@@ -7,7 +7,7 @@ import {
   radii,
   space,
   fonts,
-} from '@ignite-ui/tokens'
+} from '@learn-design-system/tokens'
 
 export const {
   styled,

@@ -9,6 +9,11 @@ export default {
     description: 'Quarta-feira, 23 de Outubro às 16h',
     duration: 60 * 60 * 24 * 7,
   },
+  decorators: [
+    (Story) => {
+      return <div style={{ height: '100px' }}>{Story()}</div>
+    },
+  ],
 } as Meta<ToastProps>
 
 export const Primary: StoryObj<ToastProps> = {}
